@@ -9,7 +9,9 @@ st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout
 # ---- READ EXCEL ----
 @st.cache_data
 def get_data_from_excel():
-    df = pd.read_csv(r"vs_data.csv")
+    url = "https://drive.google.com/uc?id=14SCDiwuez0W7YgG8cp0pEhYBKI8t0CrT"
+
+    df = pd.read_csv(url)
     return df
 
 
